@@ -4,8 +4,10 @@ import styles from './SignupForm.module.css'
 const SignUp = () => {
 
   const [fullName, setfullName] = useState('');
+  //eslint-disable-next-line
   const [PhoneNumber, setPhoneNumber] = useState('');
   const [phErr, setphErr] = useState('');
+  //eslint-disable-next-line
   const [Email, setEmail] = useState('');
   const [emailErr, setemailErr] = useState('');
   const [Password, setPassword] = useState('');
@@ -38,6 +40,7 @@ const SignUp = () => {
     if (val === '') {
       setemailErr(false)
     }
+    //eslint-disable-next-line 
     else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val) === false) {
       setemailErr('Please Enter Valid Email')
     } else {
